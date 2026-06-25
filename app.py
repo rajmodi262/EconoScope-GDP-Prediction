@@ -5,6 +5,7 @@ import numpy as np
 import joblib
 import os
 import matplotlib.pyplot as plt
+from pharma_analytics import render_pharma_tab
 
 # ----------------------------
 # PAGE & STYLES
@@ -195,8 +196,8 @@ st.markdown(
 )
 
 # Header
-st.markdown('<div class="app-header">🌍 Global GDP Predictor</div>', unsafe_allow_html=True)
-st.markdown('<div class="app-subtitle">Advanced economic forecasting with machine learning • Real-time scenario analysis</div>', unsafe_allow_html=True)
+st.markdown('<div class="app-header">📊 EconoScope — Economic & Life-Sciences Analytics</div>', unsafe_allow_html=True)
+st.markdown('<div class="app-subtitle">US biopharma commercial analytics • ML-driven forecasting • patent-cliff &amp; competitive intelligence • real-time scenario analysis</div>', unsafe_allow_html=True)
 
 # ----------------------------
 # LOAD MODELS & ARTIFACTS
@@ -288,7 +289,15 @@ SELECTED_FEATURES = [
 # ----------------------------
 # MAIN LAYOUT - TABS
 # ----------------------------
-tab1, tab2, tab3 = st.tabs(["🎯 Prediction Dashboard", "📈 Model Performance", "⚙️ System Information"])
+tab_pharma, tab1, tab2, tab3 = st.tabs([
+    "💊 Pharma Commercial Analytics",
+    "🎯 GDP Prediction Dashboard",
+    "📈 Model Performance",
+    "⚙️ System Information",
+])
+
+with tab_pharma:
+    render_pharma_tab()
 
 with tab1:
     st.markdown('<div class="card">', unsafe_allow_html=True)

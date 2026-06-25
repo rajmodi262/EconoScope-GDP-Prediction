@@ -1,7 +1,7 @@
 <div align="center">
 
-# 🌍 Global GDP Predictor
-### *Advanced Economic Forecasting with Machine Learning*
+# 📊 EconoScope
+### *Economic & Life-Sciences Commercial Analytics — ML Forecasting, Pharma Market Intelligence & Patent-Cliff Modelling*
 
 <br>
 
@@ -14,12 +14,38 @@
 
 <br>
 
-> **Predict any country's GDP** using 25 World Bank economic indicators,  
-> with **10 trained ML models** — all wrapped in a sleek, real-time Streamlit dashboard.
+> **US Biopharma commercial analytics** — market sizing, brand-level forecasting,
+> patent-cliff (LOE) erosion modelling, competitive landscaping and an
+> auto-generated **Insights / Opportunities / Threats** consulting brief —
+> *plus* a full **macro GDP forecasting engine** (25 World Bank indicators, 10 ML models),
+> all in one real-time Streamlit console.
 
 <br>
 
 </div>
+
+---
+
+## 💊 Life-Sciences Commercial Analytics  *(flagship module)*
+
+The first tab of the app — `pharma_analytics.py` — is a **US biopharma commercial-analytics
+console** modelled on the work of a life-sciences analytics consultant:
+
+| Capability | What it does |
+|------------|--------------|
+| 📈 **Market sizing & forecasting** | US net-sales trajectory 2019→2030 with a ±12% uncertainty band, per therapy area |
+| ⏳ **Patent-cliff / LOE modelling** | Year-by-year sales-at-risk from loss of exclusivity, with distinct **generic vs biosimilar** erosion curves |
+| 🏁 **Competitive landscape** | Share-vs-growth bubble map and company-level share table |
+| 🌳 **Therapy-area treemap** | 2024 market value by area & brand, coloured by growth |
+| 📝 **Auto-generated consulting brief** | Data-driven **Insights · Opportunities · Threats** — the consulting deliverable, generated live |
+
+> Covers Oncology, Immunology, Cardiometabolic (incl. GLP-1), Neuroscience, Rare Disease & Vaccines.
+> The reference market is a deterministic, seeded approximation; swap `build_market()` for an
+> IQVIA / Evaluate / 10-K feed and the pipeline is production-ready.
+
+**Why it maps to commercial life-sciences analytics roles:** *deep dive into datasets · extract
+key insights, opportunities and threats · advanced analysis in the Life Sciences / Pharma domain ·
+build visually rich, engaging analytical tools* — Python, pandas, Plotly, ML.
 
 ---
 

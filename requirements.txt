@@ -9,3 +9,4 @@ lightgbm
 xgboost
 jinja2
 streamlit
+plotly
